@@ -50,7 +50,7 @@ The [**range**][range] is defined as the difference between the maximum and mini
 ## Usage
 
 ```javascript
-import srangeabs from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-ndarray-srangeabs@deno/mod.js';
+import srangeabs from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-ndarray-srangeabs@v0.1.0-deno/mod.js';
 ```
 
 #### srangeabs( arrays )
@@ -96,7 +96,7 @@ The function has the following parameters:
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@deno/mod.js';
 import ndarray from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-base-ctor@deno/mod.js';
 import ndarray2array from 'https://cdn.jsdelivr.net/gh/stdlib-js/ndarray-to-array@deno/mod.js';
-import srangeabs from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-ndarray-srangeabs@deno/mod.js';
+import srangeabs from 'https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-ndarray-srangeabs@v0.1.0-deno/mod.js';
 
 var xbuf = discreteUniform( 10, -50, 50, {
     'dtype': 'float32'
