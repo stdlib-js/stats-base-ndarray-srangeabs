@@ -1,4 +1,4 @@
-/**
+/*
 * @license Apache-2.0
 *
 * Copyright (c) 2026 The Stdlib Authors.
@@ -16,17 +16,21 @@
 * limitations under the License.
 */
 
-'use strict';
+// TypeScript Version: 4.1
+
+/// <reference types="https://cdn.jsdelivr.net/gh/stdlib-js/types@esm/index.d.ts"/>
+
+import { float32ndarray } from '@stdlib/types/ndarray';
 
 /**
-* Compute the range of absolute values of a one-dimensional single-precision floating-point ndarray.
+* Computes the range of absolute values of a one-dimensional single-precision floating-point ndarray.
 *
-* @module @stdlib/stats-base-ndarray-srangeabs
+* @param arrays - array-like object containing an input ndarray
+* @returns range
 *
 * @example
 * var Float32Array = require( '@stdlib/array-float32' );
 * var ndarray = require( '@stdlib/ndarray-base-ctor' );
-* var srangeabs = require( '@stdlib/stats-base-ndarray-srangeabs' );
 *
 * var xbuf = new Float32Array( [ 1.0, -3.0, 4.0, 2.0 ] );
 * var x = new ndarray( 'float32', xbuf, [ 4 ], [ 1 ], 0, 'row-major' );
@@ -34,26 +38,9 @@
 * var v = srangeabs( [ x ] );
 * // returns 3.0
 */
-
-// MODULES //
-
-var join = require( 'path' ).join;
-var tryRequire = require( '@stdlib/utils-try-require' );
-var isError = require( '@stdlib/assert-is-error' );
-var main = require( './main.js' );
-
-
-// MAIN //
-
-var srangeabs;
-var tmp = tryRequire( join( __dirname, './native.js' ) );
-if ( isError( tmp ) ) {
-	srangeabs = main;
-} else {
-	srangeabs = tmp;
-}
+declare function srangeabs( arrays: [ float32ndarray ] ): number;
 
 
 // EXPORTS //
 
-module.exports = srangeabs;
+export = srangeabs;
