@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-02-14)
+## Unreleased (2026-02-16)
 
 <section class="features">
 
@@ -22,6 +22,7 @@
 
 <details>
 
+-   [`33e3d9f`](https://github.com/stdlib-js/stdlib/commit/33e3d9f96ce3fc32b31dd3f46a017c92b73b0425) - **chore:** minor clean-up _(by Philipp Burckhardt)_
 -   [`5dfd41d`](https://github.com/stdlib-js/stdlib/commit/5dfd41df5e698950034ed3e54d9f32dc9ff03355) - **feat:** add C implementation for `stats/base/ndarray/srangeabs` [(#10240)](https://github.com/stdlib-js/stdlib/pull/10240) _(by Bhargav Dabhade, Philipp Burckhardt)_
 
 </details>
